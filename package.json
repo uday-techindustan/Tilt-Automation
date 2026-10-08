@@ -1,0 +1,24 @@
+{
+  "name": "tilt-playwright-automation",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:chromium": "playwright test --project=chromium",
+    "test:safari": "playwright test --project=webkit --grep TC023",
+    "test:edge": "playwright test --project=edge --grep TC079",
+    "test:firefox": "playwright test --project=firefox --grep TC080",
+    "test:p0": "playwright test --grep @P0",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.7.0",
+    "dotenv": "^17.2.2",
+    "typescript": "^5.9.3"
+  }
+}
